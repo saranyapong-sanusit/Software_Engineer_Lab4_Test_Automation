@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2026-01-02T03:20:07.594663" rpa="false" schemaversion="5">
+<suite id="s1" name="2 EmptyLastName" source="C:\Users\saran\Documents\KKU\3-2\Software Engineering\Lab4RobotFramework\Lab4\uat02\2EmptyLastName\No2\2_EmptyLastName.robot">
+<test id="s1-t1" name="Open Workshop Registration Page" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:07.800503" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-02T03:20:07.800114" elapsed="1.539888"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.340542" elapsed="0.000329"/>
+</kw>
+<status status="PASS" start="2026-01-02T03:20:07.798205" elapsed="1.542983"/>
+</test>
+<test id="s1-t2" name="Registration Page Should Be Open" line="18">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.350555" level="INFO">Current location is 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.344819" elapsed="0.005859"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.354834" level="INFO">Page title is 'Registration'.</msg>
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.350990" elapsed="0.003947"/>
+</kw>
+<status status="PASS" start="2026-01-02T03:20:09.342329" elapsed="0.012904"/>
+</test>
+<test id="s1-t3" name="Empty Last Name" line="22">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.357050" level="INFO">Typing text 'Somyod' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>Somyod</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.356678" elapsed="0.079605"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.436959" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<arg>id=organization</arg>
+<arg>CS KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.436663" elapsed="0.052363"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.489583" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>somyod@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.489360" elapsed="0.061864"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.551781" level="INFO">Typing text '091-001-1234' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>091-001-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.551576" elapsed="0.060111"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.612267" level="INFO">Clicking button 'Register'.</msg>
+<arg>Register</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.612050" elapsed="0.061485"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.676951" level="INFO">Current location contains 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION_URL}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.673861" elapsed="0.003164"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.679883" level="INFO">Page title is 'Registration'.</msg>
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.677233" elapsed="0.002713"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:20:09.689726" level="INFO">Current page contains text 'Please enter your last name!!'.</msg>
+<arg>Please enter your last name!!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.680150" elapsed="0.009670"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-02T03:20:09.690078" elapsed="2.122010"/>
+</kw>
+<doc>Verify successful registration flow</doc>
+<status status="PASS" start="2026-01-02T03:20:09.356255" elapsed="2.456557"/>
+</test>
+<status status="PASS" start="2026-01-02T03:20:07.595851" elapsed="4.218107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="2 EmptyLastName" id="s1" pass="3" fail="0" skip="0">2 EmptyLastName</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

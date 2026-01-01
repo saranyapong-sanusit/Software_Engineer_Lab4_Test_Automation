@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2026-01-02T03:15:21.002025" rpa="false" schemaversion="5">
+<suite id="s1" name="1 OpenRegistrationPage" source="C:\Users\saran\Documents\KKU\3-2\Software Engineering\Lab4RobotFramework\Lab4\uat02\2EmptyLastName\No1\1_OpenRegistrationPage.robot">
+<test id="s1-t1" name="Open Workshop Registration Page" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:15:21.248469" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-02T03:15:21.248169" elapsed="1.451246"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-01-02T03:15:22.699907" elapsed="0.000335"/>
+</kw>
+<status status="PASS" start="2026-01-02T03:15:21.247119" elapsed="1.453396"/>
+</test>
+<test id="s1-t2" name="Registration Page Should Be Open" line="17">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:15:22.712334" level="INFO">Current location is 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-01-02T03:15:22.704143" elapsed="0.008348"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:15:22.716717" level="INFO">Page title is 'Registration'.</msg>
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-02T03:15:22.712845" elapsed="0.003971"/>
+</kw>
+<status status="PASS" start="2026-01-02T03:15:22.703068" elapsed="0.014053"/>
+</test>
+<status status="PASS" start="2026-01-02T03:15:21.003372" elapsed="1.714898"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="1 OpenRegistrationPage" id="s1" pass="2" fail="0" skip="0">1 OpenRegistrationPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

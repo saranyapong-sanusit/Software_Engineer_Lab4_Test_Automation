@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.9 on win32)" generated="2026-01-02T03:37:57.197369" rpa="false" schemaversion="5">
+<suite id="s1" name="2 InvalidPhoneNumber" source="C:\Users\saran\Documents\KKU\3-2\Software Engineering\Lab4RobotFramework\Lab4\uat02\6InvalidPhoneNumber\No2\2_InvalidPhoneNumber.robot">
+<test id="s1-t1" name="Open Workshop Registration Page" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:57.403826" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-02T03:37:57.403580" elapsed="1.585584"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-01-02T03:37:58.989565" elapsed="0.000326"/>
+</kw>
+<status status="PASS" start="2026-01-02T03:37:57.402630" elapsed="1.587501"/>
+</test>
+<test id="s1-t2" name="Registration Page Should Be Open" line="18">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:58.995782" level="INFO">Current location is 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-01-02T03:37:58.990975" elapsed="0.004938"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.001301" level="INFO">Page title is 'Registration'.</msg>
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-02T03:37:58.996356" elapsed="0.005051"/>
+</kw>
+<status status="PASS" start="2026-01-02T03:37:58.990626" elapsed="0.011066"/>
+</test>
+<test id="s1-t3" name="Invalid Phone Number" line="22">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.002889" level="INFO">Typing text 'Somyod' into text field 'id=firstname'.</msg>
+<arg>id=firstname</arg>
+<arg>Somyod</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.002530" elapsed="0.077861"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.080938" level="INFO">Typing text 'Sodsai' into text field 'id=lastname'.</msg>
+<arg>id=lastname</arg>
+<arg>Sodsai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.080713" elapsed="0.052555"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.133860" level="INFO">Typing text 'CS KKU' into text field 'id=organization'.</msg>
+<arg>id=organization</arg>
+<arg>CS KKU</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.133615" elapsed="0.055943"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.190087" level="INFO">Typing text 'somyod@kkumail.com' into text field 'id=email'.</msg>
+<arg>id=email</arg>
+<arg>somyod@kkumail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.189876" elapsed="0.062094"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.252459" level="INFO">Typing text '1234' into text field 'id=phone'.</msg>
+<arg>id=phone</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.252260" elapsed="0.051117"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.303903" level="INFO">Clicking button 'Register'.</msg>
+<arg>Register</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.303690" elapsed="0.051880"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.358809" level="INFO">Current location contains 'http://localhost:7272/Registration.html'.</msg>
+<arg>${REGISTRATION_URL}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.355866" elapsed="0.003021"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.361775" level="INFO">Page title is 'Registration'.</msg>
+<arg>Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-02T03:37:59.359100" elapsed="0.002737"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-02T03:37:59.456458" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-02T03:37:59.456624" level="FAIL">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</msg>
+<arg>Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2026-01-02T03:37:59.362025" elapsed="0.096169">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-01-02T03:37:59.458763" elapsed="0.000033"/>
+</kw>
+<doc>Verify successful registration flow</doc>
+<status status="FAIL" start="2026-01-02T03:37:59.002170" elapsed="0.456832">Page should have contained text 'Please enter a valid phone number, e.g., 081-234-5678, 081 234 5678, or 081.234.5678)' but did not.</status>
+</test>
+<status status="FAIL" start="2026-01-02T03:37:57.198609" elapsed="2.261003"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="2 InvalidPhoneNumber" id="s1" pass="2" fail="1" skip="0">2 InvalidPhoneNumber</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
